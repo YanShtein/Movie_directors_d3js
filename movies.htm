@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<script src="d3.v2.js"></script>
+<script src="d3.layout.cloud.js"></script>
+<script src="movies.js"></script>
+<body style="background:black;"></body>
+<script>
+  var fill = d3.scale.category20();
+
+  d3.layout.cloud().size([1920, 1080])
+      .words(movies)
+      .rotate(function() { return ~~(Math.random() * 2) * 90; })
+      .font("Impact")
+      .fontSize(function(d) { return d.size; })
+      .on("end", draw)
+      .start();
+
+  function draw(words) {
+    d3.select("body").append("svg")
+        .attr("width", 1920)
+        .attr("height", 1080)
+      .append("g")
+        .attr("transform", "translate(960,540)")
+      .selectAll("text")
+        .data(words)
+      .enter().append("text")
+        .style("font-size", function(d) { return d.size + "px"; })
+        .style("font-family", "Impact")
+        .style("fill", function(d, i) { return fill(i); })
+        .attr("text-anchor", "middle")
+        .attr("transform", function(d) {
+          return "translate(" + [d.x, d.y] + ")rotate(" + d.rotate + ")";
+        })
+        .text(function(d) { return d.text; });
+  }
+</script>

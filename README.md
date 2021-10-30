@@ -1,9 +1,10 @@
 # Movie_directors_d3js
 Final project of Python for Everybody course.
 
-<img src="https://github.com/YanShtein/Movie_directors_d3js/blob/main/preview.PNG" alt="Output preview" style="max-width: 80%;">
+<img src="https://github.com/YanShtein/Movie_directors_d3js/blob/main/preview.PNG" alt="Output preview" style="max-width: 50%;">
 
 We were asked to identify a data source, perform some analysis on that data to later vizualize it in browser. 
+
 (based on chapter 16 of the book: 'Python for Everybody' by Dr. Charles R. Severance)
 
 After some research, I decided to use <a href='https://www.kaggle.com/harshitshankhdhar/imdb-dataset-of-top-1000-movies-and-tv-shows?select=imdb_top_1000.csv'>imdb_top_1000</a> Dataset for the project.

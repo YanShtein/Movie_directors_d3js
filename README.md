@@ -1,7 +1,7 @@
 # Movie_directors_d3js
 Final project of Python for Everybody course.
 
-<img src="https://github.com/YanShtein/Movie_directors_d3js/blob/main/preview.PNG" alt="Output preview" style="max-width: 50%;">
+<img src="https://github.com/YanShtein/Movie_directors_d3js/blob/main/preview.PNG" alt="Output preview" style="max-width: 100%;">
 
 We were asked to identify a data source, perform some analysis on that data to later vizualize it in browser. 
 
